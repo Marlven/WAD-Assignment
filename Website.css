@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* ======================== Menu ======================= */
+.Navigation nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+   margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: line-through;
+    color: purple;
+    font-weight: lighter;
+    transition: 0.4;
+    font-size: 20px;
+} 
+
+nav ul li a:hover{
+    color: gold;
+}
+
+img {
+    max-width: 200px;
+    max-height: 2000px;
+    padding-right: 50px;
+ }
+
+
+/* ============================== HomePage =========================== */
+.Home{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.Welcome{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    position: relative;
+}
+
+.Welcome p{
+    text-align: center;
+}
+
+.Welcome h2{
+    padding-top: 70px;
+    padding-left: 2px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    padding-left: 2px;
+    padding-top: 5px;
+    line-height: 30px;
+}
+
+.Col1{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Col2{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Col3{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Col3 img{
+    width: 230px;
+    height: 200px;
+}
+
+
+/* ======================= About ======================== */
+.About{
+    position: relative;
+    width: 100%;
+    height: 105vh;
+}
+
+.top h2{
+    font-size: 20px;
+    padding-bottom: 40px;
+    padding-top: 0;
+    margin-top: -54px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+h2:hover{
+    color: rgb(4, 207, 207);
+    transition-duration: 1.1s;
+}
+
+.top{
+    padding-left: 0px;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    padding-top: 70px;
+    color: deeppink;
+    position: relative;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.top p{
+    padding-left: 2px;
+    padding-top: 5px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.bottom{
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+}
+
+.bottom h1{
+    text-align: center;
+}
+
+.slide1{ 
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.slide2{ 
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.slide3{ 
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+
+/* =========================== Event ======================== */
+.Event{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.Head{
+    padding-left: 0px;
+    width: 1200px;
+    height: 20%;
+    margin: auto;
+    padding-top: 70px;
+    color: deeppink;
+    position: relative;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.Head h2{
+    font-size: 20px;
+    padding-bottom: 40px;
+    padding-top: 0;
+    margin-top: -54px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.Head p{
+    padding-left: 2px;
+    padding-top: 5px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.Bod{
+    padding-left: 0px;
+    width: 1200px;
+    height: 50%;
+    margin: auto;
+    padding-top: 70px;
+    color: deeppink;
+    position: relative;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.Bod h2{
+    font-size: 20px;
+    padding-bottom: 40px;
+    padding-top: 0;
+    margin-top: -54px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.Bod p{
+    padding-left: 2px;
+    padding-top: 5px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.End h2{
+    font-size: 20px;
+    padding-bottom: 40px;
+    padding-top: 0;
+    margin-top: -54px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.End p{
+    padding-left: 2px;
+    padding-top: 5px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+
+/* ======================= Speakers ========================*/
+.Speakers{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.Content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    color: black;
+    position: relative;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.Content h2{
+font-size: 20px;
+padding-bottom: 40px;
+padding-top: 0;
+margin-top: -54px;
+padding-left: 10px;
+text-align: center;
+}
+
+.Content p{
+    padding-left: 2px;
+    padding-top: 5px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.Speaker1{ 
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Speaker2{ 
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Speaker3{ 
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Speaker4{ 
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Speaker5{ 
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Speaker6{ 
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+/* ======================= Research =========================*/
+
+
+/* ======================== Contact =========================*/
+
+
+/* ======================== Socials ========================*/
+

@@ -3,12 +3,14 @@ body{
     rgb(130, 4, 134) 60%, rgb(233, 8, 102) 80%);
     font-family: 'Montserrat', sans-serif;
 }
+
 .container{
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
 }
+
 form{
     height: 560px;
     padding: 2em;
@@ -18,6 +20,7 @@ form{
     box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
     text-align: center;
 }
+
 p{
     font-weight: bold;
     color: blueviolet;
@@ -27,6 +30,7 @@ p{
     margin-bottom: 40px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
+
 input{
     background: transparent;
     width: 220px;
@@ -39,6 +43,7 @@ input{
     border-radius: 50px;
     box-shadow: 4px 4px 30px rgba(0,0,0,0.2);
 }
+
 input::placeholder{
     color: crimson;
     font-weight: 400;
@@ -50,11 +55,12 @@ input::placeholder{
         outline: none;
     }
     input[type="submit"]{
-        margin-top: 10px;
+        margin-top: 15px;
         width: 150px;
         font-size: 1rem;
         cursor: pointer;
     }
+
 .drop{
     background: rgba(255,255,255,0.3);
     backdrop-filter: blur(10px);
@@ -110,4 +116,59 @@ input::placeholder{
     left: 60px;
 }
 
-
+select {
+    position: relative;
+    font-family: Arial;
+    width: 240px;
+    margin-bottom: 20px;
+    color: blueviolet;
+    background: transparent;
+}
+  
+.select-selected{
+    background-color: pink;
+  }
+  
+  .select-selected::after{
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  }
+  
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
