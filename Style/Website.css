@@ -7,37 +7,38 @@
 
 
 /* ======================== Menu ======================= */
-.Navigation nav{
-    display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
-    align-items: center;
-    justify-content: space-between;    
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between;
+    background: transparent;
+    padding: 13px 10%;    
+    transition: 0.2s;
+    box-shadow: -3px -3px 7px rgb(236, 18, 18),
+    2px 2px 5px rgb(201, 131, 131);
 }
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
-   margin: 10px 20px;
-}
-
-nav ul li a{
-    text-decoration: line-through;
-    color: purple;
-    font-weight: lighter;
-    transition: 0.4;
-    font-size: 20px;
-} 
-
-nav ul li a:hover{
-    color: gold;
-}
-
-img {
+.logo {
     max-width: 200px;
     max-height: 2000px;
     padding-right: 50px;
+    padding-left: 150px;
+ }
+
+ .Menu{
+    display: flex;
+ }
+
+ .Menu a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: aqua;
+    font-weight: 500;
  }
 
 
@@ -61,7 +62,7 @@ img {
 }
 
 .Welcome h2{
-    padding-top: 70px;
+    padding-top: 90px;
     padding-left: 2px;
     letter-spacing: 2px;
     font-size: 30px;
@@ -98,7 +99,17 @@ p{
     box-sizing: border-box;
 }
 
-.Col3 img{
+.Home .Col1 img{
+    width: 230px;
+    height: 200px;
+}
+
+.Home .Col2 img{
+    width: 230px;
+    height: 200px;
+}
+
+.Home .Col3 img{
     width: 230px;
     height: 200px;
 }
@@ -108,7 +119,7 @@ p{
 .About{
     position: relative;
     width: 100%;
-    height: 105vh;
+    height: 130vh;
 }
 
 .top h2{
@@ -178,12 +189,17 @@ h2:hover{
     box-sizing: border-box;
 }
 
+.About img{
+    width: 230px;
+    height: 200px;
+}
 
 /* =========================== Event ======================== */
 .Event{
     position: relative;
     width: 100%;
     height: 80vh;
+    background-color: rgb(226, 11, 11);
 }
 
 .Head{
@@ -263,7 +279,8 @@ h2:hover{
 .Speakers{
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 120vh;
+    background-color: whitesmoke;
 }
 
 .Content{
@@ -278,12 +295,12 @@ h2:hover{
 }
 
 .Content h2{
+    position: relative;
 font-size: 20px;
-padding-bottom: 40px;
-padding-top: 0;
+padding-bottom: 20px;
 margin-top: -54px;
-padding-left: 10px;
 text-align: center;
+background-color: aqua;
 }
 
 .Content p{
@@ -297,8 +314,13 @@ text-align: center;
     width: 33.33%;
     float: left;
     text-align: center;
-    padding: 0px 50px;
+    padding: 0px 50px 0px; 
     box-sizing: border-box;
+}
+
+.Speaker1 img{
+    width: 230px;
+    height: 200px;
 }
 
 .Speaker2{ 
@@ -309,6 +331,12 @@ text-align: center;
     box-sizing: border-box;
 }
 
+.Speaker2 img{
+    width: 230px;
+    height: 200px;
+}
+
+
 .Speaker3{ 
     width: 33.33%;
     float: left;
@@ -317,12 +345,23 @@ text-align: center;
     box-sizing: border-box;
 }
 
+.Speaker3 img{
+    width: 230px;
+    height: 200px;
+}
+
+
 .Speaker4{ 
     width: 33.33%;
     float: left;
     text-align: center;
     padding: 0px 50px;
     box-sizing: border-box;
+}
+
+.Speaker4 img{
+    width: 230px;
+    height: 200px;
 }
 
 .Speaker5{ 
@@ -333,6 +372,12 @@ text-align: center;
     box-sizing: border-box;
 }
 
+.Speaker5 img{
+    width: 230px;
+    height: 200px;
+}
+
+
 .Speaker6{ 
     width: 33.33%;
     float: left;
@@ -341,11 +386,97 @@ text-align: center;
     box-sizing: border-box;
 }
 
+.Speaker6 img{
+    width: 230px;
+    height: 200px;
+}
+
+
 /* ======================= Research =========================*/
 
 
 /* ======================== Contact =========================*/
+.Contact{
+    background-color: aliceblue;
+}
 
+.Contact h2{
+    position: relative;
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin-top: -54px;
+    text-align: center;
+    background-color: burlywood;
+}
+
+.Contact-Form{
+    display: grid;
+    place-items: center;
+    margin-top: 1rem;
+    background-image: url(2.png);
+    background-repeat: no-repeat;
+    background-size: 1500px 432px;
+}
+
+.Contact-Form form{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+form input,
+form textarea{
+    padding: 15px;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: hsl(71, 100%, 50%);
+    margin-bottom: 1rem;
+    color: rgb(6, 15, 143);
+}
+
+form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.Contact-Button{
+    width: 160px;
+    cursor: pointer;
+    background: rgb(3, 0, 0);
+    color: white;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 35%;
+}
+
+.Contact-Button:hover{
+    background: pink;
+}
 
 /* ======================== Socials ========================*/
+.Socials{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: whitesmoke;
+    color: aqua;
+}
 
+.Socials h2{
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.Foot{
+    color: greenyellow;
+    font-size: 25px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 40px;
+    background-color: aliceblue;
+}
+
+/* ======================== Responsive ========================*/
