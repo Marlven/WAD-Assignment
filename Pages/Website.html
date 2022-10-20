@@ -11,29 +11,29 @@
 </head>
 <body>
     
-
-
     <!-- Menu -->
     <header>
     <!-- Logo -->
     <img src="../Images/7.png" class="logo">
 
-<!-- Reponse Button-->
-<div class="bx bx-menu" id="Menu-Icon"></div>
 
     <!-- Menu Items-->
-            <ul class="Menu">
-                <li><a href="HomePage.html">Home</a></li>                  
-                <li><a href="About.html">About</a></li>
-                <li><a href="Event.html">Event</a></li>
-                <li><a href="Speakers.html">Speakers</a></li>
-                <li><a href="Research.html">Research</a></li>
-                <li><a href="Contact.html">Contact Us</a></li>
-                <li><a href="Profile.html">Profile</a></li>
-
-                <div class="bx bx-moon" id="Dark"></div>
+            <ul class="Menu" id="Menu">
+                <li><a href="#Home">Home</a></li>                  
+                <li><a href="#About">About</a></li>
+                <li><a href="#Event">Event</a></li>
+                <li><a href="#Speakers">Speakers</a></li>
+                <li><a href="#Research">Research</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+                <!-- Reponse Button-->
+                <div class="bx bx-exit" id="Exit" onclick="closeMenu()"></div>           
             </ul>
-       
+
+            <!-- Dark Mode Button-->
+            <div class="bx bx-moon" id="Dark"></div>
+             <!-- Menu Button-->
+             <div class="bx bx-menu" id="Menu-Icon" onclick="openMenu()"></div>
+            
     </header>
     
      <!--HomePage-->
@@ -117,7 +117,11 @@
 
             <div class="Head">
                 <h2>Conference</h2>
-                <p>Title</p>
+                <p>Title: Digitisation</p>
+                <p>Speakers: Samantha Rogers, Amanda Einsberg, Sasha Smith</p>
+                <p>Theme: Changing the world at large through digitisation</p>
+                <p>Time: 07:00 to 21:00 </p>
+                
             </div>
 
             <div class="Bod">
@@ -146,32 +150,32 @@
                 </div><br>
                 
                 <div class="Speaker2">
-                    <img src="../Images/P2.jpg" alt="" id="P1">
+                    <img src="../Images/P5.jpeg" alt="" id="P1">
                     <h2>Amanda Einsberg</h2>
                     <p>Director of Science and Technlogy</p>
                 </div><br>
         
                 <div class="Speaker3">
-                    <img src="../Images/P5.jpeg" alt="" id="P2">
+                    <img src="../Images/P2.jpg" alt="" id="P2">
                     <h2>Antonio Ferreros</h2>
                     <p>Professor of CyberSecurity</p>
                 </div><br>
         
                 <div class="Speaker4">
                     <img src="../Images/P4.jpg" alt="" id="P3">
-                    <h2>Samuel Smith</h2>
+                    <h2>Sasha Smith</h2>
                     <p>Managing Director of Economics</p>
                 </div>
         
                 <div class="Speaker5">
                     <img src="../Images/P3.jpg" alt="" id="P4">
-                    <h2>Roger Banks</h2>
+                    <h2>Roza Banks</h2>
                     <p>PHD Researcher</p>
                 </div>
         
                 <div class="Speaker6">
                     <img src="../Images/P6.jpeg" alt="" id="P">
-                    <h2>Eric Water</h2>
+                    <h2>Ester Water</h2>
                     <p>CEO of Big Data Firm</p>
                 </div>
             
@@ -191,12 +195,13 @@
 
         <!---->
         <div class="Contact-Form">
-            <form action="">
-                <input type="text" placeholder="Enter Your Name">
-                <input type="email" placeholder="Enter Your Email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Message Here..."></textarea>
+            <form name="submit-to-google-sheet" action="">
+                <input name="Name" type="text" placeholder="Enter Your Name">
+                <input name="Email" type="email" placeholder="Enter Your Email">
+                <textarea name="Message" id="" cols="30" rows="10" placeholder="Write Your Message Here..."></textarea>
                 <input type="button" value="Send" class="Contact-Button">
             </form>
+            <span id="Message">Hey there </span>
         </div>
 
     </section>
@@ -206,10 +211,10 @@
         <h2>Socials</h2>
         
         <div class="Foot">
-            <a href=""><i class="bx bxl-facebook"></i></a>
-            <a href=""><i class="bx bxl-twitter"></i></a>
-            <a href=""><i class="bx bxl-instagram"></i></a>
-            <a href=""><i class="bx bxl-youtube"></i></a>
+            <a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="bx bxl-youtube"></i></a>
         </div>
 
     </div>

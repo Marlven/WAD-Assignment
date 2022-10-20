@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*.Container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(3.jpg);
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+   margin: 10px 20px;
+}
+/* Sepcs for Menu options */
+/*nav ul li a{
+    text-decoration: line-through;
+    color: purple;
+    font-weight: lighter;
+    transition: 0.4;
+    font-size: 20px;
+} 
+
+nav ul li a:hover{
+    color: gold;
+}
+
+.Content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    color: wheat;
+    position: relative;
+}
+
+.Content p{
+    padding-left: 2px;
+    padding-top: 5px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.Content h2{
+    padding-top: 70px;
+    padding-left: 2px;
+    letter-spacing: 2px;
+    font-size: 30px;
+}*/
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between;
+    background: transparent;
+    padding: 13px 10%;    
+    /*transition: 0.2s;*/
+    box-shadow: -3px -3px 7px rgb(236, 18, 18),
+    2px 2px 5px rgb(201, 131, 131);
+    padding-bottom: 3px;
+}
+
+.logo {
+    max-width: 200px;
+    max-height: 2000px;
+    padding-right: 50px;
+    padding-left: 150px;
+ }
+
+ .Menu{
+    display: flex;
+ }
+
+ .Menu a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: aqua;
+    font-weight: 500;
+ }
+
+ /* ============================== HomePage =========================== */
+.Home{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.Welcome{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    position: relative;
+}
+
+.Welcome p{
+    text-align: center;
+}
+
+.Welcome h2{
+    padding-top: 90px;
+    padding-left: 2px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    padding-left: 2px;
+    padding-top: 5px;
+    line-height: 30px;
+}
+
+.Col1{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Col2{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Col3{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Home .Col1 img{
+    width: 230px;
+    height: 200px;
+}
+
+.Home .Col2 img{
+    width: 230px;
+    height: 200px;
+}
+
+.Home .Col3 img{
+    width: 230px;
+    height: 200px;
+}
+
