@@ -1,0 +1,185 @@
+/* ======================== Menu ======================= */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between;
+    background: transparent;
+    padding: 13px 10%;    
+    transition: 0.2s;
+    box-shadow: -3px -3px 7px rgb(236, 18, 18),
+    2px 2px 5px rgb(201, 131, 131);
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 200px;
+    padding-right: 50px;
+    padding-left: 150px;
+ }
+
+ ul li{
+    display: inline-block;  
+    list-style: none;
+    margin: 10px 20px;
+ }
+
+ ul li a{
+    font-size: 1rem;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 500;
+ }
+
+ /*================================ Content =============================*/
+ .Content{
+    margin-top: 40px;
+ }
+
+ .Content h1{
+    margin-top: 40px;
+ }
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #6990f2;
+}
+
+ .Wrapper{
+    width: 430px;
+    padding: 30px;
+    background: greenyellow;
+    border-radius: 5px;
+}
+
+.Wrapper h2{
+    color: #6990f2;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.Wrapper form{
+    height: 167px;
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #6990f2;
+}
+
+form :where(i, p){
+    color: #6990f2;
+}
+
+form p{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+section .Row{
+    background: #e9f0ff;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .Row i{
+    font-size: 30px;
+    color: #6990f2;
+}
+
+section .Row .Content{
+    width: 100%;
+    margin-left: 15px;
+}
+
+section .Details span{
+    font-size: 14px;
+}
+
+.Progress-Area .Row .Content{
+    width: 100%;
+    margin-left: 15px;
+}
+
+.Progress-Area .Details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+.Progress-Area .Progress-Bar{
+    height: 6px;
+    width: 100%;
+    background: #404;
+    margin-bottom: 4px;
+    border-radius: 30px;
+}
+
+.Progress-Bar .Progress{
+    height: 100%;
+    width: 50%;
+    background: #6990f2;
+    border-radius: inherit;
+}
+
+.Uploaded-Area{
+    max-height: 230px;
+    overflow-y: scroll;
+}
+
+.Uploaded-Area.onprogress{
+    max-height: 150px;
+}
+
+.Uploaded-Area::-webkit-scrollbar{
+    width: 0px;
+}
+
+.Uploaded-Area .Row .Content{
+    display: flex;
+    align-items: center;
+}
+
+.Uploaded-Area .Row .Details{
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+
+.Uploaded-Area .Details .Size{
+    font-size: 11px;
+    color: #404;
+}
+
+.Uploaded-Area .fa-check{
+    color: #6990f2;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

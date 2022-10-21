@@ -52,6 +52,10 @@ header{
     font-weight: 500;
  }
 
+ #Dark{
+    right: initial;
+ }
+
 /* ============================== HomePage =========================== */
 .Home{
     position: relative;
@@ -178,6 +182,7 @@ p{
 
 .bottom h1{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .slide1{ 
@@ -496,10 +501,16 @@ form textarea{
     text-align: center;
     line-height: 40px;
     background-color: aliceblue;
+    transition: transform 0.5s;
+}
+
+.Foot a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
 }
 
 /* ======================== Responsive ========================*/
-header .Menu #Exit{
+header .Menu #Exit, #Menu-Icon{
     display: none;
 }
 

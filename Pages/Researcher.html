@@ -5,31 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Researcher Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="../Style/Researcher.css">
     <script src="../Scripts/Researcher.js"></script>
 </head>
 <body>
     
-    <div class="Container">
-
-        <nav>
-            <ul>
-                <li><a href="HomePage.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Event.html">Event</a></li>
-                <li><a href="Speakers.html">Speakers</a></li>
-                <li><a href="Research.html">Research</a></li>
-                <li><a href="Contact.html">Contact Us</a></li>
-                <li><a href="Researcher.html">Profile</a></li>
-            </ul>
-        </nav>
+    <!-- Menu -->
+    <header>
+        <!-- Logo -->
+        <img src="../Images/7.png" class="logo">
+        <!-- Menu Items-->
+             <a href="./Website.html"><i class="bx bx-exit"></i></a>
+        </header>
         
         <div class="Content">
-            <h1>Conference Chair Dashboard</h1>
-            <p>Welcome Chairman to your Dashboard</p>
+            <br>
+            <h1>Research Centre</h1>
+            <p>Welcome Researcher to the Researcher's grid. Please upload your research paper/papers below:</p>
         </div>
 
-</div>
+        <div class="Wrapper">
+            <h2>File Uploader</h2> 
+            <form action="#">
+                <input type="file" class="File-Input" name="File" hidden>
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Browse File to Upload</p>
+            </form>
+
+            <section class="Progress-Area"></section>
+
+            <section class="Uploaded-Area"></section>
+
+        </div>
 
 </body>
 </html>
